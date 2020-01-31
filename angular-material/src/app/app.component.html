@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>MyMaterial</span>
+
+    <span class="example-spacer"></span>
+
+    <button mat-button>About</button>
+    <button mat-button>Services</button>
+    <button mat-button>Contact</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-card>
+  <div class="example-container">
+    <mat-form-field>
+      <input
+        matInput
+        [(ngModel)]="answer"
+        placeholder="who's the gonna be the best web developer"
+      />
+    </mat-form-field>
+  </div>
+
+  <div class="example-container">
+    <button mat-raised-button (click)="showAnswer()">Answer me</button>
+  </div>
+</mat-card>
+
+<!-- spinner -->
+
+<mat-spinner
+  style="margin: 0 auto;"
+  [style.display]="showSpinner ? 'block' : 'none'"
+></mat-spinner>
+
+<div class="example-container">
+  <mat-card *ngIf="answerDisplay">
+    <h3 style="text-align: center;">{{ answerDisplay }}, you're damn right.</h3>
+  </mat-card>
+</div>
