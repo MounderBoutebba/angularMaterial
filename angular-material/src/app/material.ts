@@ -6,10 +6,14 @@ import {
   MatInputModule,
   MatProgressSpinnerModule,
   MatCardModule,
-  MatButtonToggleModule
+  MatButtonToggleModule,
+  MatIconModule,
+  MatBadgeModule
 } from "@angular/material";
 
 const MaterialComponents = [
+  MatBadgeModule,
+  MatIconModule,
   MatButtonToggleModule,
   MatButtonModule,
   MatInputModule,

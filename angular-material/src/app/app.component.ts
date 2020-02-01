@@ -9,7 +9,7 @@ export class AppComponent {
   answer: string = "mounder";
   answerDisplay: string = "";
   showSpinner: boolean = false;
-
+  notificationBadgeValue: number = 3;
   showAnswer() {
     this.showSpinner = true;
 
