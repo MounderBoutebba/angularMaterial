@@ -39,6 +39,66 @@
   </mat-card>
 </div>
 <!-- startlearningend -->
+<!-- buttons -->
+<div class="example-container">
+  <h1 style="color: rgba(24, 94, 223, 0.623);">material buttons</h1>
+
+  <button style="background-color: #123541; color: azure;" mat-button>
+    Click me !
+  </button>
+  <button style="background-color: #1b7553; color: azure;" mat-raised-button>
+    Click me ! raised button
+  </button>
+  <button style="background-color: #5e1658; color: azure;" mat-flat-button>
+    Click me ! flat button
+  </button>
+  <button style="background-color: #743714; color: azure;" mat-stroked-button>
+    Click me ! stroked button
+  </button>
+</div>
+
+<div class="example-container">
+  <button mat-flat-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-stroked-button color="warn">Warning</button>
+</div>
+<!-- <div class="example-container">
+  <button mat-mat-icon-button>Icon</button>
+  <button mat-fab>Fab</button>
+  <button mat-mini-fab>Mini</button>
+</div> -->
+
+<!-- buttonToggle -->
+<div class="example-container">
+  <mat-button-toggle #toggled>Toggle</mat-button-toggle>
+  <p style="text-align: center;" *ngIf="toggled.checked">Toggled</p>
+  <p style="text-align: center;" *ngIf="!toggled.checked">not Toggled</p>
+</div>
+
+<div class="example-container">
+  <h2>button toggle group :</h2>
+  <mat-button-toggle-group
+    class="flexx coloring"
+    #toggleGroup1="matButtonToggleGroup"
+  >
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  <h4>{{ toggleGroup1.value }}</h4>
+  <mat-button-toggle-group
+    class="flexx coloring"
+    multiple
+    #toggleGroup2="matButtonToggleGroup"
+  >
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  <h4>{{ toggleGroup2.value }}</h4>
+</div>
+<!-- endButtonToggle -->
+<!-- end buttons -->
 
 <!-- typography -->
 <div class="example-container">

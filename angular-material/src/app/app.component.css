@@ -11,3 +11,18 @@
   flex-direction: column;
   padding: 10px 20px;
 }
+
+.coloring {
+  background-color: rgba(24, 94, 223, 0.623);
+  color: whitesmoke;
+}
+
+button {
+  margin: 1rem 3rem;
+  padding: 0.8rem 0.5rem;
+}
+.flexx {
+  width: 80%;
+  display: flexbox;
+  justify-content: space-around;
+}
