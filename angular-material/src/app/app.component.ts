@@ -10,6 +10,7 @@ export class AppComponent {
   answerDisplay: string = "";
   showSpinner: boolean = false;
   notificationBadgeValue: number = 3;
+  opened = false;
   showAnswer() {
     this.showSpinner = true;
 
@@ -17,5 +18,8 @@ export class AppComponent {
       this.answerDisplay = this.answer;
       this.showSpinner = false;
     }, 500);
+  }
+  sidenavToggle() {
+    this.opened = !this.opened;
   }
 }

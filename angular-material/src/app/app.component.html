@@ -26,8 +26,6 @@
   </div>
 </mat-card>
 
-<!-- spinner -->
-
 <mat-spinner
   style="margin: 0 auto;"
   [style.display]="showSpinner ? 'block' : 'none'"
@@ -99,10 +97,10 @@
 </div>
 <!-- endButtonToggle -->
 <!-- end buttons -->
+
 <!-- icons -->
 <div class="example-container">
   <h1 style="color: rgba(24, 94, 223, 0.623);">Material Icons</h1>
-
   <mat-icon class="spaceDiv" color="primary"> grade grade</mat-icon>
   <mat-icon class="spaceDiv"> alarm alarm alarm alarm alarm </mat-icon
   ><mat-icon class="spaceDiv" color="warn">
@@ -112,6 +110,7 @@
   </mat-icon>
 </div>
 <!-- end icons -->
+
 <!-- badges -->
 <div class="example-container">
   <h1 style="color: rgba(24, 94, 223, 0.623);">Material Badges</h1>
@@ -155,6 +154,45 @@
   </div>
 </div>
 <!-- end badges -->
+
+<!-- spinner and progress spinner -->
+<div class="example-container">
+  <h1 style="color: rgba(24, 94, 223, 0.623);">Material spinner</h1>
+  <mat-progress-spinner color="warn" value="40"></mat-progress-spinner>
+  <mat-spinner></mat-spinner>
+</div>
+<!-- spinner and progress spinner end-->
+
+<!-- navigation -->
+<div class="example-container">
+  <h1 style="color: rgba(24, 94, 223, 0.623);">Material toolbar</h1>
+  <mat-toolbar class="navbar" color="accent">
+    <div>TOOLBAR</div>
+    <div>
+      <span>Home</span>
+      <span>about</span>
+      <span>services</span>
+    </div>
+  </mat-toolbar>
+</div>
+<!-- navigation end -->
+
+<!-- sidenav  -->
+<div class="example-container">
+  <h1 style="color: rgba(24, 94, 223, 0.623);">Material sidenav</h1>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">Side nav</mat-sidenav>
+    <mat-sidenav-content
+      >side nav content
+      <button (click)="sidenavToggle()">toggle opened</button>
+      <button (click)="sidenav.open()">open</button>
+      <button (click)="sidenav.close()">close</button>
+      <button (click)="sidenav.toggle()">toggle</button>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+<!-- sidenav end -->
+
 <!-- typography -->
 <div class="example-container">
   <h1 style="color: rgba(24, 94, 223, 0.623);">Material Typography</h1>
